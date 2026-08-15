@@ -65,23 +65,9 @@ Laravel adopts MVC to keep the codebase organized and predictable. Instead of mi
 - **Maintainability** — bugs are easier to isolate because each layer has a distinct role.
 - **Scalability** — as an application grows, new features can be added without disrupting the entire codebase.
 
-**Request Flow Diagram:**
+**MVC Request Flow Diagram:**
 
-```
-Browser
-   │
-   ▼
-Route (routes/web.php)
-   │
-   ▼
-Controller (CompanyController)
-   │
-   ▼
-Blade View (resources/views)
-   │
-   ▼
-Response sent back to Browser
-```
+![MVC Request Flow Diagram](documentation/flowchart.png)
 
 In my project: when a user visits `/about`, Laravel matches the URL to a route I defined in `web.php`, which calls the `about()` method in my `CompanyController`. The controller prepares the data (core values, team members) and returns the `pages.about` Blade view I built, which Laravel compiles into HTML and sends back to the browser.
 
@@ -111,7 +97,7 @@ Route::get('/contact', [CompanyController::class, 'contact'])->name('contact');
 
 **Screenshot — `web.php`:**
 
-`[Insert screenshot of routes/web.php here]`
+![Screenshot of web.php](documentation/web-php.png)
 
 ---
 
@@ -162,7 +148,7 @@ Each method prepares the data needed by its corresponding page and passes it to 
 
 **Screenshot — `CompanyController.php`:**
 
-`[Insert screenshot of CompanyController.php here]`
+![Screenshot of CompanyContoller.php](documentation/company-controller.png)
 
 ---
 
@@ -215,7 +201,8 @@ I separated reusable pieces of the interface — the navigation bar and footer �
 
 **Screenshot — Blade Layout:**
 
-`[Insert screenshot of layouts/app.blade.php here]`
+![Screenshot of app.blade.php](documentation/app-blade.png)
+
 
 ---
 
@@ -236,17 +223,16 @@ I separated reusable pieces of the interface — the navigation bar and footer �
 
 | Page/Item | Screenshot |
 |---|---|
-| Home Page | `[Insert screenshot]` |
-| About Page | `[Insert screenshot]` |
-| Services Page | `[Insert screenshot]` |
-| Contact Page | `[Insert screenshot]` |
-| Navigation Bar | `[Insert screenshot]` |
-| Footer | `[Insert screenshot]` |
-| Route Definitions (`web.php`) | `[Insert screenshot]` |
-| Controller (`CompanyController.php`) | `[Insert screenshot]` |
-| Blade Layout (`app.blade.php`) | `[Insert screenshot]` |
+| Home Page | ![Home Page](documentation/homepage.png) |
+| About Page | ![About Page](documentation/about.png) |
+| Services Page | ![Service Page](documentation/services.png) |
+| Contact Page | ![Contact Page](documentation/contact.png) |
+| Navigation Bar | ![Navigation Bar](documentation/navbar.png) |
+| Footer | ![Footer](documentation/footer.png) |
+| Route Definitions | ![web.php](documentation/web-php.png) |
+| Controller | ![CompanyController.php](documentation/company-controller.png) |
+| Blade Layout | ![app.blade.php](documentation/app-blade.png) ||
 
-*(Screenshots are stored in the `/screenshots` folder of this repository.)*
 
 ---
 
