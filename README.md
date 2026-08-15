@@ -232,6 +232,10 @@ I separated reusable pieces of the interface â€” the navigation bar and footer â
 | Route Definitions | ![web.php](documentation/web-php.png) |
 | Controller | ![CompanyController.php](documentation/company-controller.png) |
 | Blade Layout | ![app.blade.php](documentation/app-blade.png) ||
+| VS code Project | ![VS Code Project](documentation/vscodeproject.png) ||
+| laravel Folder | ![Laravel Folder Structure](documentation/laravelss.png) ||
+| Github Repository | ![Github Repo](documentation/githubrepo.png) ||
+| Browser Output | ![Browser Output](documentation/BrowserOutput.png) ||
 
 
 ---
